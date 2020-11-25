@@ -1,4 +1,4 @@
--- Logs begin at Fri 2020-11-20 19:38:34 CET, end at Wed 2020-11-25 13:47:16 CET. --
+-- Logs begin at Fri 2020-11-20 19:38:34 CET, end at Wed 2020-11-25 14:47:32 CET. --
 Nov 24 21:31:13 arch kernel: Linux version 5.9.10-zen1-1-zen (linux-zen@archlinux) (gcc (GCC) 10.2.0, GNU ld (GNU Binutils) 2.35.1) #1 ZEN SMP PREEMPT Sun, 22 Nov 2020 14:22:26 +0000
 Nov 24 21:31:13 arch kernel: Command line: BOOT_IMAGE=/boot/vmlinuz-linux-zen root=UUID=cbb02141-7d76-4a1a-9189-67dc18c39d81 rw loglevel=3 quiet
 Nov 24 21:31:13 arch kernel: KERNEL supported cpus:
