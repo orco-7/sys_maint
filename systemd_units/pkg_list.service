@@ -1,0 +1,6 @@
+[Unit]
+Description=Stores list of currently installed packages in a text file 
+
+[Service]
+Type=simple
+ExecStart=/home/simone/sys_maint/pacman/pks_list.sh

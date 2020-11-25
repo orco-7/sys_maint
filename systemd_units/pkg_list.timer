@@ -1,0 +1,10 @@
+[Unit]
+Description=Stores list of currently installed packages in a text file 
+
+[Timer]
+Unit=pkg_list.service
+OnBootSec=95
+Persistent=true
+
+[Install]
+WantedBy=timers.target

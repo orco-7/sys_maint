@@ -1,0 +1,7 @@
+[Unit]
+Description=Cleans cahce on boot
+
+[Service]
+Type=simple
+ExecStart=/home/simone/sys_maint/cleanup/rm.py
+
