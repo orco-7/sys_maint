@@ -1,0 +1,8 @@
+[Unit]
+Description=Saves logs files
+
+[Service]
+Type=simple
+ExecStart=/home/simone/sys_maint/logs/logs.sh
+
+
