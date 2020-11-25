@@ -1,0 +1,9 @@
+[Unit]
+Description=mirr_upd.service
+
+[Timer]
+Unit=mirr_upd.service
+OnBootSec=10
+
+[Install]
+WantedBy=timers.target

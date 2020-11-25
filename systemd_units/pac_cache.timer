@@ -1,0 +1,10 @@
+[Unit]
+Description=Clears cached packages older than three upgrades
+
+[Timer]
+Unit=pac_cac.service
+OnCalendar=weekly
+Persistent=true
+
+[Install]
+WantedBy=timers.target

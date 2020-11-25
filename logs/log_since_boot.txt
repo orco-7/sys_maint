@@ -1,4 +1,4 @@
--- Logs begin at Fri 2020-11-20 19:38:34 CET, end at Wed 2020-11-25 14:47:32 CET. --
+-- Logs begin at Fri 2020-11-20 19:38:34 CET, end at Wed 2020-11-25 15:48:32 CET. --
 Nov 25 09:17:48 arch kernel: Linux version 5.9.10-zen1-1-zen (linux-zen@archlinux) (gcc (GCC) 10.2.0, GNU ld (GNU Binutils) 2.35.1) #1 ZEN SMP PREEMPT Sun, 22 Nov 2020 14:22:26 +0000
 Nov 25 09:17:48 arch kernel: Command line: BOOT_IMAGE=/boot/vmlinuz-linux-zen root=UUID=cbb02141-7d76-4a1a-9189-67dc18c39d81 rw loglevel=3 quiet
 Nov 25 09:17:48 arch kernel: KERNEL supported cpus:
@@ -7640,3 +7640,160 @@ Nov 25 14:47:32 arch kernel: audit: type=1110 audit(1606312052.180:583): pid=339
 Nov 25 14:47:32 arch sudo[33944]: pam_unix(sudo:session): session opened for user root(uid=0) by (uid=0)
 Nov 25 14:47:32 arch audit[33944]: USER_START pid=33944 uid=0 auid=4294967295 ses=4294967295 msg='op=PAM:session_open grantors=pam_limits,pam_unix,pam_permit acct="root" exe="/usr/bin/sudo" hostname=? addr=? terminal=? res=success'
 Nov 25 14:47:32 arch kernel: audit: type=1105 audit(1606312052.181:584): pid=33944 uid=0 auid=4294967295 ses=4294967295 msg='op=PAM:session_open grantors=pam_limits,pam_unix,pam_permit acct="root" exe="/usr/bin/sudo" hostname=? addr=? terminal=? res=success'
+Nov 25 14:47:32 arch sudo[33944]: pam_unix(sudo:session): session closed for user root
+Nov 25 14:47:32 arch audit[33944]: USER_END pid=33944 uid=0 auid=4294967295 ses=4294967295 msg='op=PAM:session_close grantors=pam_limits,pam_unix,pam_permit acct="root" exe="/usr/bin/sudo" hostname=? addr=? terminal=? res=success'
+Nov 25 14:47:32 arch audit[33944]: CRED_DISP pid=33944 uid=0 auid=4294967295 ses=4294967295 msg='op=PAM:setcred grantors=pam_faillock,pam_permit,pam_env,pam_faillock acct="root" exe="/usr/bin/sudo" hostname=? addr=? terminal=? res=success'
+Nov 25 14:47:32 arch kernel: audit: type=1106 audit(1606312052.222:585): pid=33944 uid=0 auid=4294967295 ses=4294967295 msg='op=PAM:session_close grantors=pam_limits,pam_unix,pam_permit acct="root" exe="/usr/bin/sudo" hostname=? addr=? terminal=? res=success'
+Nov 25 14:47:32 arch audit[33946]: USER_ACCT pid=33946 uid=0 auid=4294967295 ses=4294967295 msg='op=PAM:accounting grantors=pam_permit,pam_time acct="root" exe="/usr/bin/sudo" hostname=? addr=? terminal=? res=success'
+Nov 25 14:47:32 arch sudo[33946]:     root : TTY=unknown ; PWD=/ ; USER=root ; COMMAND=/usr/bin/journalctl -xb -1
+Nov 25 14:47:32 arch audit[33946]: CRED_REFR pid=33946 uid=0 auid=4294967295 ses=4294967295 msg='op=PAM:setcred grantors=pam_faillock,pam_permit,pam_env,pam_faillock acct="root" exe="/usr/bin/sudo" hostname=? addr=? terminal=? res=success'
+Nov 25 14:47:32 arch sudo[33946]: pam_unix(sudo:session): session opened for user root(uid=0) by (uid=0)
+Nov 25 14:47:32 arch audit[33946]: USER_START pid=33946 uid=0 auid=4294967295 ses=4294967295 msg='op=PAM:session_open grantors=pam_limits,pam_unix,pam_permit acct="root" exe="/usr/bin/sudo" hostname=? addr=? terminal=? res=success'
+Nov 25 14:47:32 arch sudo[33946]: pam_unix(sudo:session): session closed for user root
+Nov 25 14:47:32 arch audit[33946]: USER_END pid=33946 uid=0 auid=4294967295 ses=4294967295 msg='op=PAM:session_close grantors=pam_limits,pam_unix,pam_permit acct="root" exe="/usr/bin/sudo" hostname=? addr=? terminal=? res=success'
+Nov 25 14:47:32 arch audit[33946]: CRED_DISP pid=33946 uid=0 auid=4294967295 ses=4294967295 msg='op=PAM:setcred grantors=pam_faillock,pam_permit,pam_env,pam_faillock acct="root" exe="/usr/bin/sudo" hostname=? addr=? terminal=? res=success'
+Nov 25 14:47:32 arch systemd[1]: mylogs.service: Succeeded.
+░░ Subject: Unit succeeded
+░░ Defined-By: systemd
+░░ Support: https://lists.freedesktop.org/mailman/listinfo/systemd-devel
+░░ 
+░░ The unit mylogs.service has successfully entered the 'dead' state.
+Nov 25 14:47:32 arch audit[1]: SERVICE_STOP pid=1 uid=0 auid=4294967295 ses=4294967295 msg='unit=mylogs comm="systemd" exe="/usr/lib/systemd/systemd" hostname=? addr=? terminal=? res=success'
+Nov 25 14:54:24 arch rtkit-daemon[991]: Supervising 6 threads of 4 processes of 1 users.
+Nov 25 14:54:24 arch rtkit-daemon[991]: Supervising 6 threads of 4 processes of 1 users.
+Nov 25 15:04:12 arch rtkit-daemon[991]: Supervising 6 threads of 4 processes of 1 users.
+Nov 25 15:04:12 arch rtkit-daemon[991]: Supervising 6 threads of 4 processes of 1 users.
+Nov 25 15:08:25 arch rtkit-daemon[991]: Supervising 6 threads of 4 processes of 1 users.
+Nov 25 15:08:25 arch rtkit-daemon[991]: Supervising 6 threads of 4 processes of 1 users.
+Nov 25 15:11:40 arch audit[35764]: USER_AUTH pid=35764 uid=1000 auid=1000 ses=8 msg='op=PAM:authentication grantors=pam_faillock,pam_permit,pam_faillock acct="simone" exe="/usr/bin/sudo" hostname=? addr=? terminal=/dev/pts/0 res=success'
+Nov 25 15:11:40 arch kernel: kauditd_printk_skb: 7 callbacks suppressed
+Nov 25 15:11:40 arch kernel: audit: type=1100 audit(1606313500.185:593): pid=35764 uid=1000 auid=1000 ses=8 msg='op=PAM:authentication grantors=pam_faillock,pam_permit,pam_faillock acct="simone" exe="/usr/bin/sudo" hostname=? addr=? terminal=/dev/pts/0 res=success'
+Nov 25 15:11:40 arch kernel: audit: type=1101 audit(1606313500.187:594): pid=35764 uid=1000 auid=1000 ses=8 msg='op=PAM:accounting grantors=pam_permit,pam_time acct="simone" exe="/usr/bin/sudo" hostname=? addr=? terminal=/dev/pts/0 res=success'
+Nov 25 15:11:40 arch kernel: audit: type=1110 audit(1606313500.187:595): pid=35764 uid=0 auid=1000 ses=8 msg='op=PAM:setcred grantors=pam_faillock,pam_permit,pam_faillock acct="root" exe="/usr/bin/sudo" hostname=? addr=? terminal=/dev/pts/0 res=success'
+Nov 25 15:11:40 arch audit[35764]: USER_ACCT pid=35764 uid=1000 auid=1000 ses=8 msg='op=PAM:accounting grantors=pam_permit,pam_time acct="simone" exe="/usr/bin/sudo" hostname=? addr=? terminal=/dev/pts/0 res=success'
+Nov 25 15:11:40 arch audit[35764]: CRED_REFR pid=35764 uid=0 auid=1000 ses=8 msg='op=PAM:setcred grantors=pam_faillock,pam_permit,pam_faillock acct="root" exe="/usr/bin/sudo" hostname=? addr=? terminal=/dev/pts/0 res=success'
+Nov 25 15:11:40 arch dbus-daemon[523]: [system] Activating via systemd: service name='org.freedesktop.home1' unit='dbus-org.freedesktop.home1.service' requested by ':1.2859' (uid=0 pid=35764 comm="sudo pacman -Qtdq ")
+Nov 25 15:11:40 arch dbus-daemon[523]: [system] Activation via systemd failed for unit 'dbus-org.freedesktop.home1.service': Unit dbus-org.freedesktop.home1.service not found.
+Nov 25 15:11:40 arch sudo[35764]: pam_systemd_home(sudo:account): systemd-homed is not available: Unit dbus-org.freedesktop.home1.service not found.
+Nov 25 15:11:40 arch kernel: audit: type=1105 audit(1606313500.191:596): pid=35764 uid=0 auid=1000 ses=8 msg='op=PAM:session_open grantors=pam_limits,pam_unix,pam_permit acct="root" exe="/usr/bin/sudo" hostname=? addr=? terminal=/dev/pts/0 res=success'
+Nov 25 15:11:40 arch audit[35764]: USER_START pid=35764 uid=0 auid=1000 ses=8 msg='op=PAM:session_open grantors=pam_limits,pam_unix,pam_permit acct="root" exe="/usr/bin/sudo" hostname=? addr=? terminal=/dev/pts/0 res=success'
+Nov 25 15:11:40 arch sudo[35764]:   simone : TTY=pts/0 ; PWD=/home/simone ; USER=root ; COMMAND=/usr/bin/pacman -Qtdq
+Nov 25 15:11:40 arch sudo[35764]: pam_unix(sudo:session): session opened for user root(uid=0) by (uid=0)
+Nov 25 15:11:40 arch sudo[35764]: pam_unix(sudo:session): session closed for user root
+Nov 25 15:11:40 arch audit[35764]: USER_END pid=35764 uid=0 auid=1000 ses=8 msg='op=PAM:session_close grantors=pam_limits,pam_unix,pam_permit acct="root" exe="/usr/bin/sudo" hostname=? addr=? terminal=/dev/pts/0 res=success'
+Nov 25 15:11:40 arch audit[35764]: CRED_DISP pid=35764 uid=0 auid=1000 ses=8 msg='op=PAM:setcred grantors=pam_faillock,pam_permit,pam_faillock acct="root" exe="/usr/bin/sudo" hostname=? addr=? terminal=/dev/pts/0 res=success'
+Nov 25 15:11:40 arch kernel: audit: type=1106 audit(1606313500.259:597): pid=35764 uid=0 auid=1000 ses=8 msg='op=PAM:session_close grantors=pam_limits,pam_unix,pam_permit acct="root" exe="/usr/bin/sudo" hostname=? addr=? terminal=/dev/pts/0 res=success'
+Nov 25 15:11:40 arch kernel: audit: type=1104 audit(1606313500.259:598): pid=35764 uid=0 auid=1000 ses=8 msg='op=PAM:setcred grantors=pam_faillock,pam_permit,pam_faillock acct="root" exe="/usr/bin/sudo" hostname=? addr=? terminal=/dev/pts/0 res=success'
+Nov 25 15:11:48 arch dbus-daemon[523]: [system] Activating via systemd: service name='org.freedesktop.home1' unit='dbus-org.freedesktop.home1.service' requested by ':1.2860' (uid=0 pid=35787 comm="sudo pacman -Qtdq ")
+Nov 25 15:11:48 arch dbus-daemon[523]: [system] Activation via systemd failed for unit 'dbus-org.freedesktop.home1.service': Unit dbus-org.freedesktop.home1.service not found.
+Nov 25 15:11:48 arch sudo[35787]: pam_systemd_home(sudo:account): systemd-homed is not available: Unit dbus-org.freedesktop.home1.service not found.
+Nov 25 15:11:48 arch audit[35787]: USER_ACCT pid=35787 uid=1000 auid=1000 ses=8 msg='op=PAM:accounting grantors=pam_permit,pam_time acct="simone" exe="/usr/bin/sudo" hostname=? addr=? terminal=/dev/pts/0 res=success'
+Nov 25 15:11:48 arch audit[35787]: CRED_REFR pid=35787 uid=0 auid=1000 ses=8 msg='op=PAM:setcred grantors=pam_faillock,pam_permit,pam_env,pam_faillock acct="root" exe="/usr/bin/sudo" hostname=? addr=? terminal=/dev/pts/0 res=success'
+Nov 25 15:11:48 arch sudo[35787]:   simone : TTY=pts/0 ; PWD=/home/simone ; USER=root ; COMMAND=/usr/bin/pacman -Qtdq
+Nov 25 15:11:48 arch kernel: audit: type=1101 audit(1606313508.940:599): pid=35787 uid=1000 auid=1000 ses=8 msg='op=PAM:accounting grantors=pam_permit,pam_time acct="simone" exe="/usr/bin/sudo" hostname=? addr=? terminal=/dev/pts/0 res=success'
+Nov 25 15:11:48 arch kernel: audit: type=1110 audit(1606313508.940:600): pid=35787 uid=0 auid=1000 ses=8 msg='op=PAM:setcred grantors=pam_faillock,pam_permit,pam_env,pam_faillock acct="root" exe="/usr/bin/sudo" hostname=? addr=? terminal=/dev/pts/0 res=success'
+Nov 25 15:11:48 arch sudo[35787]: pam_unix(sudo:session): session opened for user root(uid=0) by (uid=0)
+Nov 25 15:11:48 arch audit[35787]: USER_START pid=35787 uid=0 auid=1000 ses=8 msg='op=PAM:session_open grantors=pam_limits,pam_unix,pam_permit acct="root" exe="/usr/bin/sudo" hostname=? addr=? terminal=/dev/pts/0 res=success'
+Nov 25 15:11:48 arch kernel: audit: type=1105 audit(1606313508.942:601): pid=35787 uid=0 auid=1000 ses=8 msg='op=PAM:session_open grantors=pam_limits,pam_unix,pam_permit acct="root" exe="/usr/bin/sudo" hostname=? addr=? terminal=/dev/pts/0 res=success'
+Nov 25 15:11:48 arch sudo[35787]: pam_unix(sudo:session): session closed for user root
+Nov 25 15:11:48 arch audit[35787]: USER_END pid=35787 uid=0 auid=1000 ses=8 msg='op=PAM:session_close grantors=pam_limits,pam_unix,pam_permit acct="root" exe="/usr/bin/sudo" hostname=? addr=? terminal=/dev/pts/0 res=success'
+Nov 25 15:11:48 arch audit[35787]: CRED_DISP pid=35787 uid=0 auid=1000 ses=8 msg='op=PAM:setcred grantors=pam_faillock,pam_permit,pam_env,pam_faillock acct="root" exe="/usr/bin/sudo" hostname=? addr=? terminal=/dev/pts/0 res=success'
+Nov 25 15:11:48 arch kernel: audit: type=1106 audit(1606313508.992:602): pid=35787 uid=0 auid=1000 ses=8 msg='op=PAM:session_close grantors=pam_limits,pam_unix,pam_permit acct="root" exe="/usr/bin/sudo" hostname=? addr=? terminal=/dev/pts/0 res=success'
+Nov 25 15:11:48 arch kernel: audit: type=1104 audit(1606313508.992:603): pid=35787 uid=0 auid=1000 ses=8 msg='op=PAM:setcred grantors=pam_faillock,pam_permit,pam_env,pam_faillock acct="root" exe="/usr/bin/sudo" hostname=? addr=? terminal=/dev/pts/0 res=success'
+Nov 25 15:38:34 arch wpa_supplicant[665]: wlo1: WPA: Group rekeying completed with 1c:49:7b:8e:74:55 [GTK=TKIP]
+Nov 25 15:39:23 arch rtkit-daemon[991]: Supervising 6 threads of 4 processes of 1 users.
+Nov 25 15:39:23 arch rtkit-daemon[991]: Supervising 6 threads of 4 processes of 1 users.
+Nov 25 15:41:43 arch audit[37803]: USER_AUTH pid=37803 uid=1000 auid=1000 ses=8 msg='op=PAM:authentication grantors=pam_faillock,pam_permit,pam_faillock acct="simone" exe="/usr/bin/sudo" hostname=? addr=? terminal=/dev/pts/0 res=success'
+Nov 25 15:41:43 arch kernel: audit: type=1100 audit(1606315303.375:604): pid=37803 uid=1000 auid=1000 ses=8 msg='op=PAM:authentication grantors=pam_faillock,pam_permit,pam_faillock acct="simone" exe="/usr/bin/sudo" hostname=? addr=? terminal=/dev/pts/0 res=success'
+Nov 25 15:41:43 arch dbus-daemon[523]: [system] Activating via systemd: service name='org.freedesktop.home1' unit='dbus-org.freedesktop.home1.service' requested by ':1.2955' (uid=0 pid=37803 comm="sudo pacman -yyy ")
+Nov 25 15:41:43 arch dbus-daemon[523]: [system] Activation via systemd failed for unit 'dbus-org.freedesktop.home1.service': Unit dbus-org.freedesktop.home1.service not found.
+Nov 25 15:41:43 arch audit[37803]: USER_ACCT pid=37803 uid=1000 auid=1000 ses=8 msg='op=PAM:accounting grantors=pam_permit,pam_time acct="simone" exe="/usr/bin/sudo" hostname=? addr=? terminal=/dev/pts/0 res=success'
+Nov 25 15:41:43 arch sudo[37803]: pam_systemd_home(sudo:account): systemd-homed is not available: Unit dbus-org.freedesktop.home1.service not found.
+Nov 25 15:41:43 arch kernel: audit: type=1101 audit(1606315303.378:605): pid=37803 uid=1000 auid=1000 ses=8 msg='op=PAM:accounting grantors=pam_permit,pam_time acct="simone" exe="/usr/bin/sudo" hostname=? addr=? terminal=/dev/pts/0 res=success'
+Nov 25 15:41:43 arch kernel: audit: type=1110 audit(1606315303.378:606): pid=37803 uid=0 auid=1000 ses=8 msg='op=PAM:setcred grantors=pam_faillock,pam_permit,pam_faillock acct="root" exe="/usr/bin/sudo" hostname=? addr=? terminal=/dev/pts/0 res=success'
+Nov 25 15:41:43 arch audit[37803]: CRED_REFR pid=37803 uid=0 auid=1000 ses=8 msg='op=PAM:setcred grantors=pam_faillock,pam_permit,pam_faillock acct="root" exe="/usr/bin/sudo" hostname=? addr=? terminal=/dev/pts/0 res=success'
+Nov 25 15:41:43 arch sudo[37803]:   simone : TTY=pts/0 ; PWD=/home/simone ; USER=root ; COMMAND=/usr/bin/pacman -yyy
+Nov 25 15:41:43 arch sudo[37803]: pam_unix(sudo:session): session opened for user root(uid=0) by (uid=0)
+Nov 25 15:41:43 arch audit[37803]: USER_START pid=37803 uid=0 auid=1000 ses=8 msg='op=PAM:session_open grantors=pam_limits,pam_unix,pam_permit acct="root" exe="/usr/bin/sudo" hostname=? addr=? terminal=/dev/pts/0 res=success'
+Nov 25 15:41:43 arch kernel: audit: type=1105 audit(1606315303.385:607): pid=37803 uid=0 auid=1000 ses=8 msg='op=PAM:session_open grantors=pam_limits,pam_unix,pam_permit acct="root" exe="/usr/bin/sudo" hostname=? addr=? terminal=/dev/pts/0 res=success'
+Nov 25 15:41:43 arch sudo[37803]: pam_unix(sudo:session): session closed for user root
+Nov 25 15:41:43 arch audit[37803]: USER_END pid=37803 uid=0 auid=1000 ses=8 msg='op=PAM:session_close grantors=pam_limits,pam_unix,pam_permit acct="root" exe="/usr/bin/sudo" hostname=? addr=? terminal=/dev/pts/0 res=success'
+Nov 25 15:41:43 arch audit[37803]: CRED_DISP pid=37803 uid=0 auid=1000 ses=8 msg='op=PAM:setcred grantors=pam_faillock,pam_permit,pam_faillock acct="root" exe="/usr/bin/sudo" hostname=? addr=? terminal=/dev/pts/0 res=success'
+Nov 25 15:41:43 arch kernel: audit: type=1106 audit(1606315303.404:608): pid=37803 uid=0 auid=1000 ses=8 msg='op=PAM:session_close grantors=pam_limits,pam_unix,pam_permit acct="root" exe="/usr/bin/sudo" hostname=? addr=? terminal=/dev/pts/0 res=success'
+Nov 25 15:41:43 arch kernel: audit: type=1104 audit(1606315303.404:609): pid=37803 uid=0 auid=1000 ses=8 msg='op=PAM:setcred grantors=pam_faillock,pam_permit,pam_faillock acct="root" exe="/usr/bin/sudo" hostname=? addr=? terminal=/dev/pts/0 res=success'
+Nov 25 15:41:46 arch dbus-daemon[523]: [system] Activating via systemd: service name='org.freedesktop.home1' unit='dbus-org.freedesktop.home1.service' requested by ':1.2956' (uid=0 pid=37813 comm="sudo pacman -yy ")
+Nov 25 15:41:46 arch dbus-daemon[523]: [system] Activation via systemd failed for unit 'dbus-org.freedesktop.home1.service': Unit dbus-org.freedesktop.home1.service not found.
+Nov 25 15:41:46 arch sudo[37813]: pam_systemd_home(sudo:account): systemd-homed is not available: Unit dbus-org.freedesktop.home1.service not found.
+Nov 25 15:41:46 arch kernel: audit: type=1101 audit(1606315306.491:610): pid=37813 uid=1000 auid=1000 ses=8 msg='op=PAM:accounting grantors=pam_permit,pam_time acct="simone" exe="/usr/bin/sudo" hostname=? addr=? terminal=/dev/pts/0 res=success'
+Nov 25 15:41:46 arch kernel: audit: type=1110 audit(1606315306.492:611): pid=37813 uid=0 auid=1000 ses=8 msg='op=PAM:setcred grantors=pam_faillock,pam_permit,pam_env,pam_faillock acct="root" exe="/usr/bin/sudo" hostname=? addr=? terminal=/dev/pts/0 res=success'
+Nov 25 15:41:46 arch audit[37813]: USER_ACCT pid=37813 uid=1000 auid=1000 ses=8 msg='op=PAM:accounting grantors=pam_permit,pam_time acct="simone" exe="/usr/bin/sudo" hostname=? addr=? terminal=/dev/pts/0 res=success'
+Nov 25 15:41:46 arch audit[37813]: CRED_REFR pid=37813 uid=0 auid=1000 ses=8 msg='op=PAM:setcred grantors=pam_faillock,pam_permit,pam_env,pam_faillock acct="root" exe="/usr/bin/sudo" hostname=? addr=? terminal=/dev/pts/0 res=success'
+Nov 25 15:41:46 arch sudo[37813]:   simone : TTY=pts/0 ; PWD=/home/simone ; USER=root ; COMMAND=/usr/bin/pacman -yy
+Nov 25 15:41:46 arch sudo[37813]: pam_unix(sudo:session): session opened for user root(uid=0) by (uid=0)
+Nov 25 15:41:46 arch kernel: audit: type=1105 audit(1606315306.499:612): pid=37813 uid=0 auid=1000 ses=8 msg='op=PAM:session_open grantors=pam_limits,pam_unix,pam_permit acct="root" exe="/usr/bin/sudo" hostname=? addr=? terminal=/dev/pts/0 res=success'
+Nov 25 15:41:46 arch audit[37813]: USER_START pid=37813 uid=0 auid=1000 ses=8 msg='op=PAM:session_open grantors=pam_limits,pam_unix,pam_permit acct="root" exe="/usr/bin/sudo" hostname=? addr=? terminal=/dev/pts/0 res=success'
+Nov 25 15:41:46 arch sudo[37813]: pam_unix(sudo:session): session closed for user root
+Nov 25 15:41:46 arch kernel: audit: type=1106 audit(1606315306.519:613): pid=37813 uid=0 auid=1000 ses=8 msg='op=PAM:session_close grantors=pam_limits,pam_unix,pam_permit acct="root" exe="/usr/bin/sudo" hostname=? addr=? terminal=/dev/pts/0 res=success'
+Nov 25 15:41:46 arch audit[37813]: USER_END pid=37813 uid=0 auid=1000 ses=8 msg='op=PAM:session_close grantors=pam_limits,pam_unix,pam_permit acct="root" exe="/usr/bin/sudo" hostname=? addr=? terminal=/dev/pts/0 res=success'
+Nov 25 15:41:46 arch audit[37813]: CRED_DISP pid=37813 uid=0 auid=1000 ses=8 msg='op=PAM:setcred grantors=pam_faillock,pam_permit,pam_env,pam_faillock acct="root" exe="/usr/bin/sudo" hostname=? addr=? terminal=/dev/pts/0 res=success'
+Nov 25 15:45:06 arch audit[38044]: USER_AUTH pid=38044 uid=1000 auid=1000 ses=8 msg='op=PAM:authentication grantors=pam_faillock,pam_permit,pam_faillock acct="simone" exe="/usr/bin/sudo" hostname=? addr=? terminal=/dev/pts/1 res=success'
+Nov 25 15:45:06 arch kernel: kauditd_printk_skb: 1 callbacks suppressed
+Nov 25 15:45:06 arch kernel: audit: type=1100 audit(1606315506.900:615): pid=38044 uid=1000 auid=1000 ses=8 msg='op=PAM:authentication grantors=pam_faillock,pam_permit,pam_faillock acct="simone" exe="/usr/bin/sudo" hostname=? addr=? terminal=/dev/pts/1 res=success'
+Nov 25 15:45:06 arch kernel: audit: type=1101 audit(1606315506.903:616): pid=38044 uid=1000 auid=1000 ses=8 msg='op=PAM:accounting grantors=pam_permit,pam_time acct="simone" exe="/usr/bin/sudo" hostname=? addr=? terminal=/dev/pts/1 res=success'
+Nov 25 15:45:06 arch kernel: audit: type=1110 audit(1606315506.904:617): pid=38044 uid=0 auid=1000 ses=8 msg='op=PAM:setcred grantors=pam_faillock,pam_permit,pam_faillock acct="root" exe="/usr/bin/sudo" hostname=? addr=? terminal=/dev/pts/1 res=success'
+Nov 25 15:45:06 arch audit[38044]: USER_ACCT pid=38044 uid=1000 auid=1000 ses=8 msg='op=PAM:accounting grantors=pam_permit,pam_time acct="simone" exe="/usr/bin/sudo" hostname=? addr=? terminal=/dev/pts/1 res=success'
+Nov 25 15:45:06 arch audit[38044]: CRED_REFR pid=38044 uid=0 auid=1000 ses=8 msg='op=PAM:setcred grantors=pam_faillock,pam_permit,pam_faillock acct="root" exe="/usr/bin/sudo" hostname=? addr=? terminal=/dev/pts/1 res=success'
+Nov 25 15:45:06 arch dbus-daemon[523]: [system] Activating via systemd: service name='org.freedesktop.home1' unit='dbus-org.freedesktop.home1.service' requested by ':1.3012' (uid=0 pid=38044 comm="sudo vim /etc/systemd/system/mirr_upd.service ")
+Nov 25 15:45:06 arch dbus-daemon[523]: [system] Activation via systemd failed for unit 'dbus-org.freedesktop.home1.service': Unit dbus-org.freedesktop.home1.service not found.
+Nov 25 15:45:06 arch sudo[38044]: pam_systemd_home(sudo:account): systemd-homed is not available: Unit dbus-org.freedesktop.home1.service not found.
+Nov 25 15:45:06 arch kernel: audit: type=1105 audit(1606315506.910:618): pid=38044 uid=0 auid=1000 ses=8 msg='op=PAM:session_open grantors=pam_limits,pam_unix,pam_permit acct="root" exe="/usr/bin/sudo" hostname=? addr=? terminal=/dev/pts/1 res=success'
+Nov 25 15:45:06 arch audit[38044]: USER_START pid=38044 uid=0 auid=1000 ses=8 msg='op=PAM:session_open grantors=pam_limits,pam_unix,pam_permit acct="root" exe="/usr/bin/sudo" hostname=? addr=? terminal=/dev/pts/1 res=success'
+Nov 25 15:45:06 arch sudo[38044]:   simone : TTY=pts/1 ; PWD=/home/simone/sys_maint/pacman ; USER=root ; COMMAND=/usr/bin/vim /etc/systemd/system/mirr_upd.service
+Nov 25 15:45:06 arch sudo[38044]: pam_unix(sudo:session): session opened for user root(uid=0) by (uid=0)
+Nov 25 15:47:14 arch sudo[38044]: pam_unix(sudo:session): session closed for user root
+Nov 25 15:47:14 arch kernel: audit: type=1106 audit(1606315634.836:619): pid=38044 uid=0 auid=1000 ses=8 msg='op=PAM:session_close grantors=pam_limits,pam_unix,pam_permit acct="root" exe="/usr/bin/sudo" hostname=? addr=? terminal=/dev/pts/1 res=success'
+Nov 25 15:47:14 arch kernel: audit: type=1104 audit(1606315634.836:620): pid=38044 uid=0 auid=1000 ses=8 msg='op=PAM:setcred grantors=pam_faillock,pam_permit,pam_faillock acct="root" exe="/usr/bin/sudo" hostname=? addr=? terminal=/dev/pts/1 res=success'
+Nov 25 15:47:14 arch audit[38044]: USER_END pid=38044 uid=0 auid=1000 ses=8 msg='op=PAM:session_close grantors=pam_limits,pam_unix,pam_permit acct="root" exe="/usr/bin/sudo" hostname=? addr=? terminal=/dev/pts/1 res=success'
+Nov 25 15:47:14 arch audit[38044]: CRED_DISP pid=38044 uid=0 auid=1000 ses=8 msg='op=PAM:setcred grantors=pam_faillock,pam_permit,pam_faillock acct="root" exe="/usr/bin/sudo" hostname=? addr=? terminal=/dev/pts/1 res=success'
+Nov 25 15:47:22 arch dbus-daemon[523]: [system] Activating via systemd: service name='org.freedesktop.home1' unit='dbus-org.freedesktop.home1.service' requested by ':1.3015' (uid=0 pid=38201 comm="sudo vim /etc/systemd/system/mirr_upd.timer ")
+Nov 25 15:47:22 arch dbus-daemon[523]: [system] Activation via systemd failed for unit 'dbus-org.freedesktop.home1.service': Unit dbus-org.freedesktop.home1.service not found.
+Nov 25 15:47:22 arch sudo[38201]: pam_systemd_home(sudo:account): systemd-homed is not available: Unit dbus-org.freedesktop.home1.service not found.
+Nov 25 15:47:22 arch audit[38201]: USER_ACCT pid=38201 uid=1000 auid=1000 ses=8 msg='op=PAM:accounting grantors=pam_permit,pam_time acct="simone" exe="/usr/bin/sudo" hostname=? addr=? terminal=/dev/pts/1 res=success'
+Nov 25 15:47:22 arch audit[38201]: CRED_REFR pid=38201 uid=0 auid=1000 ses=8 msg='op=PAM:setcred grantors=pam_faillock,pam_permit,pam_env,pam_faillock acct="root" exe="/usr/bin/sudo" hostname=? addr=? terminal=/dev/pts/1 res=success'
+Nov 25 15:47:22 arch kernel: audit: type=1101 audit(1606315642.345:621): pid=38201 uid=1000 auid=1000 ses=8 msg='op=PAM:accounting grantors=pam_permit,pam_time acct="simone" exe="/usr/bin/sudo" hostname=? addr=? terminal=/dev/pts/1 res=success'
+Nov 25 15:47:22 arch kernel: audit: type=1110 audit(1606315642.345:622): pid=38201 uid=0 auid=1000 ses=8 msg='op=PAM:setcred grantors=pam_faillock,pam_permit,pam_env,pam_faillock acct="root" exe="/usr/bin/sudo" hostname=? addr=? terminal=/dev/pts/1 res=success'
+Nov 25 15:47:22 arch sudo[38201]:   simone : TTY=pts/1 ; PWD=/home/simone/sys_maint/pacman ; USER=root ; COMMAND=/usr/bin/vim /etc/systemd/system/mirr_upd.timer
+Nov 25 15:47:22 arch audit[38201]: USER_START pid=38201 uid=0 auid=1000 ses=8 msg='op=PAM:session_open grantors=pam_limits,pam_unix,pam_permit acct="root" exe="/usr/bin/sudo" hostname=? addr=? terminal=/dev/pts/1 res=success'
+Nov 25 15:47:22 arch sudo[38201]: pam_unix(sudo:session): session opened for user root(uid=0) by (uid=0)
+Nov 25 15:47:22 arch kernel: audit: type=1105 audit(1606315642.352:623): pid=38201 uid=0 auid=1000 ses=8 msg='op=PAM:session_open grantors=pam_limits,pam_unix,pam_permit acct="root" exe="/usr/bin/sudo" hostname=? addr=? terminal=/dev/pts/1 res=success'
+Nov 25 15:48:31 arch systemd[1]: Started Saves logs files.
+░░ Subject: A start job for unit mylogs.service has finished successfully
+░░ Defined-By: systemd
+░░ Support: https://lists.freedesktop.org/mailman/listinfo/systemd-devel
+░░ 
+░░ A start job for unit mylogs.service has finished successfully.
+░░ 
+░░ The job identifier is 2964.
+Nov 25 15:48:31 arch kernel: audit: type=1130 audit(1606315711.656:624): pid=1 uid=0 auid=4294967295 ses=4294967295 msg='unit=mylogs comm="systemd" exe="/usr/lib/systemd/systemd" hostname=? addr=? terminal=? res=success'
+Nov 25 15:48:31 arch audit[1]: SERVICE_START pid=1 uid=0 auid=4294967295 ses=4294967295 msg='unit=mylogs comm="systemd" exe="/usr/lib/systemd/systemd" hostname=? addr=? terminal=? res=success'
+Nov 25 15:48:31 arch audit[38286]: USER_ACCT pid=38286 uid=0 auid=4294967295 ses=4294967295 msg='op=PAM:accounting grantors=pam_permit,pam_time acct="root" exe="/usr/bin/sudo" hostname=? addr=? terminal=? res=success'
+Nov 25 15:48:31 arch audit[38286]: CRED_REFR pid=38286 uid=0 auid=4294967295 ses=4294967295 msg='op=PAM:setcred grantors=pam_faillock,pam_permit,pam_env,pam_faillock acct="root" exe="/usr/bin/sudo" hostname=? addr=? terminal=? res=success'
+Nov 25 15:48:31 arch kernel: audit: type=1101 audit(1606315711.688:625): pid=38286 uid=0 auid=4294967295 ses=4294967295 msg='op=PAM:accounting grantors=pam_permit,pam_time acct="root" exe="/usr/bin/sudo" hostname=? addr=? terminal=? res=success'
+Nov 25 15:48:31 arch kernel: audit: type=1110 audit(1606315711.688:626): pid=38286 uid=0 auid=4294967295 ses=4294967295 msg='op=PAM:setcred grantors=pam_faillock,pam_permit,pam_env,pam_faillock acct="root" exe="/usr/bin/sudo" hostname=? addr=? terminal=? res=success'
+Nov 25 15:48:31 arch sudo[38286]:     root : TTY=unknown ; PWD=/ ; USER=root ; COMMAND=/usr/bin/journalctl -xr
+Nov 25 15:48:31 arch audit[38286]: USER_START pid=38286 uid=0 auid=4294967295 ses=4294967295 msg='op=PAM:session_open grantors=pam_limits,pam_unix,pam_permit acct="root" exe="/usr/bin/sudo" hostname=? addr=? terminal=? res=success'
+Nov 25 15:48:31 arch sudo[38286]: pam_unix(sudo:session): session opened for user root(uid=0) by (uid=0)
+Nov 25 15:48:31 arch kernel: audit: type=1105 audit(1606315711.695:627): pid=38286 uid=0 auid=4294967295 ses=4294967295 msg='op=PAM:session_open grantors=pam_limits,pam_unix,pam_permit acct="root" exe="/usr/bin/sudo" hostname=? addr=? terminal=? res=success'
+Nov 25 15:48:32 arch audit[38286]: USER_END pid=38286 uid=0 auid=4294967295 ses=4294967295 msg='op=PAM:session_close grantors=pam_limits,pam_unix,pam_permit acct="root" exe="/usr/bin/sudo" hostname=? addr=? terminal=? res=success'
+Nov 25 15:48:32 arch audit[38286]: CRED_DISP pid=38286 uid=0 auid=4294967295 ses=4294967295 msg='op=PAM:setcred grantors=pam_faillock,pam_permit,pam_env,pam_faillock acct="root" exe="/usr/bin/sudo" hostname=? addr=? terminal=? res=success'
+Nov 25 15:48:32 arch sudo[38286]: pam_unix(sudo:session): session closed for user root
+Nov 25 15:48:32 arch kernel: audit: type=1106 audit(1606315712.145:628): pid=38286 uid=0 auid=4294967295 ses=4294967295 msg='op=PAM:session_close grantors=pam_limits,pam_unix,pam_permit acct="root" exe="/usr/bin/sudo" hostname=? addr=? terminal=? res=success'
+Nov 25 15:48:32 arch kernel: audit: type=1104 audit(1606315712.145:629): pid=38286 uid=0 auid=4294967295 ses=4294967295 msg='op=PAM:setcred grantors=pam_faillock,pam_permit,pam_env,pam_faillock acct="root" exe="/usr/bin/sudo" hostname=? addr=? terminal=? res=success'
+Nov 25 15:48:32 arch audit[38288]: USER_ACCT pid=38288 uid=0 auid=4294967295 ses=4294967295 msg='op=PAM:accounting grantors=pam_permit,pam_time acct="root" exe="/usr/bin/sudo" hostname=? addr=? terminal=? res=success'
+Nov 25 15:48:32 arch audit[38288]: CRED_REFR pid=38288 uid=0 auid=4294967295 ses=4294967295 msg='op=PAM:setcred grantors=pam_faillock,pam_permit,pam_env,pam_faillock acct="root" exe="/usr/bin/sudo" hostname=? addr=? terminal=? res=success'
+Nov 25 15:48:32 arch sudo[38288]:     root : TTY=unknown ; PWD=/ ; USER=root ; COMMAND=/usr/bin/journalctl -xb 0
+Nov 25 15:48:32 arch kernel: audit: type=1101 audit(1606315712.159:630): pid=38288 uid=0 auid=4294967295 ses=4294967295 msg='op=PAM:accounting grantors=pam_permit,pam_time acct="root" exe="/usr/bin/sudo" hostname=? addr=? terminal=? res=success'
+Nov 25 15:48:32 arch kernel: audit: type=1110 audit(1606315712.159:631): pid=38288 uid=0 auid=4294967295 ses=4294967295 msg='op=PAM:setcred grantors=pam_faillock,pam_permit,pam_env,pam_faillock acct="root" exe="/usr/bin/sudo" hostname=? addr=? terminal=? res=success'
+Nov 25 15:48:32 arch sudo[38288]: pam_unix(sudo:session): session opened for user root(uid=0) by (uid=0)
+Nov 25 15:48:32 arch audit[38288]: USER_START pid=38288 uid=0 auid=4294967295 ses=4294967295 msg='op=PAM:session_open grantors=pam_limits,pam_unix,pam_permit acct="root" exe="/usr/bin/sudo" hostname=? addr=? terminal=? res=success'
+Nov 25 15:48:32 arch kernel: audit: type=1105 audit(1606315712.161:632): pid=38288 uid=0 auid=4294967295 ses=4294967295 msg='op=PAM:session_open grantors=pam_limits,pam_unix,pam_permit acct="root" exe="/usr/bin/sudo" hostname=? addr=? terminal=? res=success'

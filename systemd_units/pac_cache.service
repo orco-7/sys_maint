@@ -1,0 +1,6 @@
+[Unit]
+Description=Clears cached packages older than three updates ago
+
+[Service]
+Type=simple
+ExecStart=/home/simone/sys_maint/pacman/rm_pac_cac.sh

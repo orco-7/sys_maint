@@ -1,0 +1,6 @@
+[Unit]
+Description=Upgrades Mirrorlist
+
+[Service]
+Type=simple
+ExecStart=/home/simone/sys_maint/pacman/mirr_upd.sh
