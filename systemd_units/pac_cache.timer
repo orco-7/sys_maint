@@ -2,7 +2,7 @@
 Description=Clears cached packages older than three upgrades
 
 [Timer]
-Unit=pac_cac.service
+Unit=pac_cache.service
 OnCalendar=weekly
 Persistent=true
 

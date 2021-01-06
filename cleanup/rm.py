@@ -1,3 +1,5 @@
+#!/bin/bash
+
 from os import system, listdir
 
 ### home directoy of the user 

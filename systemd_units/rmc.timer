@@ -1,0 +1,9 @@
+[Unit]
+Description=Starts rmc.service
+
+[Timer]
+Unit=rmc.service
+OnBootSec=30
+
+[Install]
+WantedBy=timers.target
