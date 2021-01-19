@@ -45,18 +45,14 @@ mtools
 ncmpcpp
 networkmanager
 nitrogen
-ntfs-3g
 nvidia-dkms
 nvidia-utils
-optimus-manager-git
-optimus-manager-qt-git
 os-prober
 pacman
 pacman-contrib
-paru-git
 patch
 pavucontrol
-picom
+picom-tyrone-git
 piper
 pkgconf
 pulseaudio
@@ -131,6 +127,5 @@ xorg-xwd
 xorg-xwininfo
 xorg-xwud
 xpad
-yay-git
 zathura
 zip
